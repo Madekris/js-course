@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const randomNum = Math.random();
+      const guess = 'heads';
+
+      let result = '';
+      if (randomNum < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+
+      const guessResult = guess === result ? 'You Win!' : 'You Lose!'
+      console.log(guessResult);
+    </script>
+  </body>
+</html>
